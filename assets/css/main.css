@@ -1430,6 +1430,7 @@ body {
     background-image: url("../../images/bg.png");
     /* background: #f4f4f4; */
     background-size: 100% auto;
+    background: linear-gradient(180deg, #C0D9D9 8.6em, #ffffff 0%);
 }
 
 body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -2012,13 +2013,14 @@ body {
     -ms-justify-content: space-between;
     justify-content: space-between;
     background-color: #ffffff;
-    border-bottom: solid 8px rgba(160, 160, 160, 0.8);
-    height: 2.75em;
+    /* border-bottom: solid 8px rgba(160, 160, 160, 0.3); */
+    border-bottom: solid 4px navy;
+    height: 2.5em;
     left: 0;
     line-height: 3.5em;
     /*position: fixed;*/
-    margin: 0 0 1em -30%;
-    top: 0;
+    margin: 0 0 -800px -30%;
+    margin: 1em 0 0em -30%;
     width: 160%;
     z-index: 10000;
     text-align: center;
@@ -2040,17 +2042,19 @@ body {
 #header ul li {
     display: inline-block;
     padding-left: 0;
+    height: 10em;
 }
 
 .selected {
     background: rgba(160, 160, 160, 0.6);
-    border-radius: 5px;
+    background: navy;
+    border-radius: 4px;
 }
 
 #header ul li:hover {
     transition: background 0.2s ease-in-out;
     background: rgba(160, 160, 160, 0.6);
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 
@@ -2083,6 +2087,7 @@ body {
     text-align: right;
     color: inherit;
     color: #3a3a3a;
+    color: #ffffff;
 }
 
 #header .links a:hover:before {
@@ -2093,13 +2098,13 @@ body {
 #header .links ul li {
     /* border-left: solid 1px rgba(160, 160, 160, 0.3); */
     /* border-right: solid 1px rgba(160, 160, 160, 0.3); */
-    line-height: 2em;
-    height: 3em;
+    line-height: 1.5em;
+    height: 2em;
     vertical-align: middle;
-    margin-left: -0.125em;
-    padding-left: 0.6em;
+    margin-left: -0.15em;
+    padding-left: 1.02em;
     margin-right: -0.125em;
-    padding-right: 0.4em;
+    padding-right: 0.95em;
 }
 
 #header .links ul li:first-child {
@@ -2111,6 +2116,14 @@ body {
 
 #header .links ul li a {
     border-bottom: 0;
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 0.7em;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+
+#header .links ul a li {
     font-family: "Raleway", Helvetica, sans-serif;
     font-size: 0.7em;
     font-weight: 400;
@@ -2271,8 +2284,8 @@ body {
 #banner .lablogo img {
     display: inline-block;
     position: relative;
-    margin: 1em 1em -1em 2.5em;
-    height: 4.8em;
+    margin: 1em 1.5em -1em 2.5em;
+    height: 3.7em;
 }
 
 #banner .lablogo h2 {
@@ -2282,7 +2295,7 @@ body {
     margin: 0 0 0 0;
     font-size: 2em;
     font-weight: 500;
-    top: -0.9em;
+    top: -0.5em;
 }
 
 #banner .lablogo p {
@@ -2294,7 +2307,7 @@ body {
     display: inline-block;
     position: relative;
     font-size: 0.8em;
-    top: -0.4em;
+    top: 0.5em;
     left: -14.8em;
     margin-right: -40%;
 
@@ -2305,18 +2318,19 @@ body {
 #banner .unilogo {
     border-bottom: 0;
     display: inline-block;
-    margin: 0 0 1em 0;
+    margin: 0em em 1em 0;
     overflow: hidden;
     position: relative;
     top: 0.5em;
     float: right;
+    right:-2em;
 }
 
 #banner .unilogo img {
     display: inline-block;
     position: relative;
-    margin: 0 1.5em 0 0;
-    height: 5.5em;
+    margin: 0 2em 0 0;
+    height: 4.7em;
     float: left;
 }
 
@@ -2743,6 +2757,9 @@ dl dd {
     overflow: hidden;
     width: 100%;
     margin-bottom: 0em;
+    background-color: #ffffff;
+    border: solid 0px rgba(160, 160, 160, 0.3);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 /* News */
@@ -2750,13 +2767,23 @@ dl dd {
 .news {
     padding: 3em 3em 1em 3em ;
     background: #ffffff;
-    border: solid 1px rgba(160, 160, 160, 0.3);
+    /* border: solid 1px rgba(160, 160, 160, 0.3); */
     position: relative;
     width: 61.5%;
     float: left;
     height: auto;
     padding-bottom: 100em;
     margin-bottom: -100em;
+}
+
+.news h1 {
+    font-family: "Raleway", Helvetica, sans-serif;
+    display: inline-block;
+    position: relative;
+    margin: 0 0 0 0;
+    font-size: 1.3em;
+    font-weight: 500;
+    top: -0.5em;
 }
 
 .news > header {
@@ -2988,14 +3015,24 @@ dl dd {
 
 /* About */
 .about{
-    padding: 0em 2em 0em 2em ;
-    border: solid 1px rgba(160, 160, 160, 0.3);
+    padding: 1.5em 2em 0em 2em ;
+    /* border: solid 1px rgba(160, 160, 160, 0.3); */
     position: relative;
     width: 37.5%;
     float: left;
     color: inherit;
     margin-bottom: -100em;
     background: #ffffff;
+}
+
+.about h1 {
+    font-family: "Raleway", Helvetica, sans-serif;
+    display: inline-block;
+    position: relative;
+    margin: 0 0 0 0;
+    font-size: 1.3em;
+    font-weight: 500;
+    top: -0.5em;
 }
 
 .about a {
@@ -3011,13 +3048,23 @@ dl dd {
 .sidebar {
     padding: 2em 2.0em 0em 2.0em ;
     background: #ffffff;
-    border: solid 1px rgba(160, 160, 160, 0.3);
+    /* border: solid 1px rgba(160, 160, 160, 0.3); */
     position: relative;
     width: 37.5%;
     float: right;
     color: inherit;
     padding-bottom: 100em;
     margin-bottom: -100em;
+}
+
+.sidebar h1 {
+    font-family: "Raleway", Helvetica, sans-serif;
+    display: inline-block;
+    position: relative;
+    margin: 0 0 0 0;
+    font-size: 1.3em;
+    font-weight: 500;
+    top: -0.5em;
 }
 
 .sidebar a {
@@ -3322,10 +3369,13 @@ body.single #footer {
 .page {
     padding: 3em 3em 1em 3em ;
     background: #ffffff;
+    background: #C0D9D9;
     border: solid 1px rgba(160, 160, 160, 0.3);
     margin: 0em 0 3em 0;
     position: relative;
     width: 100%;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
     /* white-space: pre-wrap; /\* css-3 *\/     */
     /* white-space: -moz-pre-wrap; /\* Mozilla, since 1999 *\/ */
