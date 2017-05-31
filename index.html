@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Eda Lab</title>
+
+<style type="text/css">
+
+	a.menu:link {color: white; text-decoration: none; font-size:10pt;}
+	a.menu:hover {color:white; text-decoration: underline; font-size:10pt;}
+	a.menu:active {color: white; text-decoration: none; font-size:10pt;}
+	a.menu:visited {color: white; text-decoration: none; font-size:10pt;}
+
+	a.text:link {color: #F60; text-decoration: none;}
+	a.text:hover {color:#F30; text-decoration: underline;}
+	a.text:active {color: #F60; text-decoration: underline;}
+	a.text:visited {color: #F60; text-decoration: none;}
+
+	a img {border-style:none;}
+
+
+
+html{
+	overflow-y:scroll;
+	}
+
+body{
+	background-color: #333;
+	margin: 0;
+	background-image: url(images-top/bg.jpg);
+	color: #333;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:10pt;
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+<div align="center">
+
+
+
+ <p>&nbsp;</p>
+ <table width="900" border="0" cellspacing="0" cellpadding="0">  
+    <tr height="100">
+      <td width="140" height="120">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images-top/grouplogo.png" width="79" height="90" />
+      </td>
+      <td width="530" height="120" align="left" style="font-size:25pt; font-family: Century Gothic; color: white; vertical-align:middle ;"><em>Eda Lab      
+      <span style="font-size:14pt; font-family:	 Century Gothic">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nanomaterials &amp; Devices Group</span></em></td>
+      <td width="230" align="left" style="font-size:25pt; font-family: Century Gothic; color: white; vertical-align:middle ;"><a href="http://www.nus.edu.sg" target="_blank"><img src="images-top/NUS_logo2.png" width="202" height="96" /></a></td>
+    </tr>
+  </table>
+  
+  <img src="images-top/bar.png">
+  <table width="900" border="0" cellpadding="0" cellspacing="0" >
+    <tr align="center" valign="middle"  height="40" width="100">
+      <td height="20" align="left" style="color:white;">
+      &nbsp;&nbsp; &nbsp;&nbsp; <a class="menu" href="index.html">Home</a>&nbsp;|&nbsp;<a class="menu" href="research.html">Research</a>&nbsp;|&nbsp;<a class="menu" href="archive.html">Archive</a>&nbsp;|&nbsp;<a class="menu" href="people.html">People</a>&nbsp;|&nbsp;<a class="menu" href="facilities.html">Facilities</a>&nbsp;| <a class="menu" href="publications.html">Publications</a>&nbsp;| <a class="menu" href="positions.html">Positions</a>&nbsp;|&nbsp;<a class="menu" href="links.html">Links</a></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  
+  
+  <table width="900" border="0" cellspacing="0" cellpadding="0" background="images-top/white-top.png">
+       <tr>
+      <td height="20" align="center" valign="top">
+      </td>
+    </tr>
+  </table>
+  
+   
+  
+ 
+  <table width="900" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" background="images-top/white-middle.png">
+    <tr>
+      <td height="520" align="center" valign="top" style="padding:30px;">
+      
+      
+      
+      
+      
+      
+      <table border="0" align="center" cellpadding="0" cellspacing="0" width="750">
+        <tr>
+          <td width="385" valign="top"><br />
+          
+     
+          <div style="font-size:18pt; ">Welcome!</div>
+         
+            <p align="justify">We are a research group led by Prof. Goki Eda in  the Department of Physics/Chemistry and Centre for Advanced 2D Materials. Our  research focuses on fundamental and applied science of novel low-dimensional  materials and aims to exploit them in diverse areas of technology from  electronics to energy harvesting.  Please visit our <a href="research.html" target="_self" class="text">Research page</a> for details of our activities.</p></td>
+          <td width="10">&nbsp;</td>
+          <td width="360" height="248" align="center">
+          
+          
+                <table width="330" height="248" align="center" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center">
+        
+        
+        
+<!-- This is the start of the script for controlling fade effect -->
+
+<script type="text/javascript" 
+   src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.1.0/prototype.js"></script>
+<script type="text/javascript" 
+   src="https://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js?
+   load=effects"></script>
+ 
+ <script type="text/javascript">
+
+  function ShowEffect(element){
+       new Effect.Appear(element, 
+       {duration:1, from:0, to:1.0});
+   }
+    function FadeEffect(element){
+       new Effect.Fade(element,
+       {duration:1, from:1.0, to:0});
+   }    
+
+<!-- This is the start of the script for controlling image slideshow -->
+
+  var i = 0;
+  var img = new Array();
+	img[0] = "images-home/AFM-MoS2.jpg";
+	img[1] = "images-home/interlayerlitho.jpg";
+	img[2] = "images-home/PLofGO.jpg";
+	img[3] = "images-home/MoS2TF.jpg";
+	img[4] = "images-home/rGOfilm.jpg";
+	img[5] = "images-home/POGLBfilm.jpg";
+	img[6] = "images-home/GOandPOG.jpg";
+	img[7] = "images-home/TEM-POG.jpg";
+	
+	function swapImage()
+{
+   document.slide.src = img[i];
+   if(i < img.length - 1) i++; else i = 0;
+   
+   <!-- Function fade image -->
+   
+   setTimeout("FadeEffect('hideshow')",4000);
+   
+   <!-- Function show image -->
+
+   setTimeout("ShowEffect('hideshow')",5000);
+  
+   <!-- Function swap image -->
+
+   setTimeout("swapImage()",5000);
+}
+window.onload=swapImage;
+
+</script>
+
+<!-- This is the end of the script for controlling image slideshow -->
+
+<!-- Show image in fade -->
+
+<div id = "hideshow">
+
+<img height="225" name="slide" src=
+"images-home/AFM-MoS2.jpg" width="300"/>
+
+</div>
+
+
+      </td></tr>
+      </table>
+
+          
+          </td>
+        </tr>
+        <tr>
+          <td height="17" valign="top">&nbsp;</td>
+          <td height="17">&nbsp;</td>
+          <td height="17" align="center">&nbsp;</td>
+        </tr>
+        </table>
+        
+        
+        <br />
+                
+        
+        <table border="0" align="center" cellpadding="0" cellspacing="0"  width="750">
+          <tr>
+          <td width="485" align="left" valign="top">
+          
+            <div style="font-size:12pt; color:#36F" align="left"><strong>&gt; What's New?</strong></div>       
+
+   
+
+            <br />
+            <table width="480" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="left" valign="top">26 Sep 2016</td>
+                <td align="left" valign="top">-</td>
+                <td align="left" valign="top">Dr. Goki Eda is selected as an Associate Editor for new Nature partner journal: <a href="http://www.nature.com/npj2dmaterials/about/editorial-board" class="text">npj 2D Materials and Applications</a><a href="http://www.nature.com/npj2dmaterials/about/editorial-board"></a></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">26 Sep 2016</td>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">Dr. Li Shisheng's paper is selected as top pick publications in <span class="text"><a href="http://www.journals.elsevier.com/applied-materials-today/news/prof-martin-pumera-presents-his-top-picks-from-applied-mater" class="text">Applied Materials Today</a><a href="http://www.nature.com/npj2dmaterials/about/editorial-board"></a><a href="http://www.journals.elsevier.com/applied-materials-today/news/prof-martin-pumera-presents-his-top-picks-from-applied-mater"></a></span> by Professor Martin Pumera!</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">8 Aug 2016</td>
+                <td align="left" valign="top">-</td>
+                <td align="left" valign="top">Warm welcome to our new Ph.D student Mr. Lee Yuan Zhe and new FYP student, Mr. Tan Choon Zhe!</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+              </tr>
+              <tr>
+                <td width="86" align="left" valign="top">15 Jul 2016</td>
+                <td width="10" align="left" valign="top">-</td>
+                <td width="384" align="left" valign="top">Congratulation to Jenna for finishing his internship in NMD Lab!</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">21 Jun 2016</td>
+                <td align="left" valign="top">-</td>
+                <td align="left" valign="top">Dr. Kozawa's paper on the interlayer Energy Transfer in MoSe2/WS2 heterostructures is published in <a href="http://pubs.acs.org/doi/abs/10.1021/acs.nanolett.6b00801" class="text">Nano Letter</a>!
+                  </p>
+                  <p><img src="images-home/Kozawa's NL paper.png" width="367" height="252" /></p></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">20 Jun 2016</td>
+                <td align="left" valign="top">-</td>
+                <td align="left" valign="top">Congratulation to Kiran for successfully completing his PhD oral defense!</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">1 Jun 2016</td>
+                <td align="left" valign="top">-</td>
+                <td align="left" valign="top">Warm welcome to our visiting research student Jenna from Rutgers University!</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">20 Apr 2016</td>
+                <td align="left" valign="top">-</td>
+                <td align="left" valign="top">Congratulation to Dr. Li Shisheng for winning the MRS Best Poster Award at MRS Spring Meeting in Phoenix. His poster is titled: &quot;Halide-Assisted Atmospheric Pressure Growth of Large WSe2 and WS2 Monolayer Crystals.&quot;</p>
+                  <p><img src="images-home/MRS Poster - Dr. Li Shisheng.JPG" alt="" width="245" height="326" /></p></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">14 Apr 2016</td>
+                <td align="left" valign="top">-</td>
+                <td align="left" valign="top">Congratulation to Wenjie and Samuel for finishing their poster presentation for NUS Chemistry Honours Project.
+                  </p>
+                  <p><img src="images-home/2016 Chemistry Honours Project Poster  Presentation.jpg" alt="" width="240" height="320" /></p></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">2 Feb 2016</td>
+                <td align="left" valign="top">-</td>
+                <td align="left" valign="top">Dr. Weijie's paper on exciton-plasmon coupling in monolayer TMDC and Ag nanoparticles hybrid system  has been published in <span class="text"><a href="http://onlinelibrary.wiley.com.libproxy1.nus.edu.sg/wol1/doi/10.1002/adma.201504478/abstract" class="text">Advanced Material</a></span>!
+                  </p>
+                  <p><img src="images-home/Weijie (2016) Advanced Materials Exciton-Plasmon Coupling.png" width="180" height="141" /></p></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">13 Jan 2016</td>
+                <td align="left" valign="top">-</td>
+                <td align="left" valign="top">Shunfeng's paper on the p-type doping effect of oxygen and ozone on mono- and few-layer WSe2 and MoSe2 FET has been published in <span class="text"><a href="http://pubs.rsc.org/en/content/articlelanding/2016/cp/c5cp07194a#!divAbstract" class="text">Physical Chemistry Physical Physics</a></span>!</p>
+                  <p><img src="images-home/Shunfeng's Ozone paper.gif" width="378" height="183" /></p></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">1 Jan 2016</td>
+                <td align="left" valign="top">-</td>
+                <td align="left" valign="top">Happy New Year! </td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top">&nbsp;</td>
+              </tr>
+            </table>
+            <br />
+<div style="font-size:12pt; color:#36F" align="left"><strong>&gt; We are recruiting!</strong></div>     
+           
+            <p>We are looking for motivated postdocs and PhD students to join our group. Positions are available on projects focusing on  (i) charge transport and (ii) exciton dynamic in 2D crystals. Please see the <a href="positions.html" class="text">Recruitment page</a> for details.</p></td>
+          <td width="13" valign="top">&nbsp;</td>
+          
+           
+          <td width="252" valign="top" style="padding-left:30px; border-left:solid 1px #666;">
+          <p><strong>Contact Information:</strong></p>
+            <p> Physics Department, Blk S12<br />
+              National University of Singapore<br />
+  2 Science Drive 3<br />
+  Singapore 117542</p>
+            <p>Phone: +65 6516 2970<br />
+              Fax: +65 6777 6126 </p>
+            <p>E-mail: g.eda &quot;at&quot; nus.edu.sg</p>
+            <p>Our laboratory is located in building S13 in the Faculty of Science of NUS.</p>
+            <p><a href="http://map.nus.edu.sg/" target="_blank"><img src="images-home/map.jpg" width="193" height="164" /></a></p>
+            <p>&nbsp;</p>
+            <p><strong>We have NUS-Imperial joint PhD opportunities!</strong></p>
+            <p><a href="www3.imperial.ac.uk/"><img src="images-top/Imperial-logo.jpg" width="177" height="45" /></a></p>
+            <p><img src="images-top/Imperial-campus.jpg" width="185" height="99" /></p>
+            <p>Find out more about the joint program <a href="http://www.science.nus.edu.sg/graduate-studies/overview/jdp-phd/nus-icl-jdp-phd" target="_blank" class="text">here</a>.</p></td>
+          </tr>
+    </table>
+    
+    
+        <p><br />
+      <img src="images-home/bottom/cleanroom.jpg" width="115" height="115" border="1"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="images-home/bottom/composite_TFT.jpg" width="115" height="115" border="1"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="images-home/bottom/football_field.jpg" width="115" height="115" border="1" />&nbsp;&nbsp;&nbsp;&nbsp;<img src="images-home/bottom/e-beam3.jpg" width="115" height="115" border="1"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="images-home/bottom/merlion.jpg" width="115" height="115" border="1"/></p>
+<p>&nbsp;</p>
+      <p><a href="http://www.nrf.gov.sg/" target="_blank"><img src="images-home/nrf_logo.gif" width="395" height="50" /></a>&nbsp;&nbsp;&nbsp;<a href="http://www.royalsociety.org/" target="_blank"><img src="images-home/royal_society.gif" width="163" height="50" /></a>&nbsp;&nbsp;&nbsp;<a href="http://www.graphenecenter.org/" target="_blank"><img src="images-home/grc_logo.gif" width="100" height="50" /></a></p></td>
+    </tr>
+  </table>
+  
+  
+    <table width="900" border="0" cellspacing="0" cellpadding="0" background="images-top/white-bottom.png">
+       <tr>
+      <td height="20" align="center" valign="top">
+      </td>
+    </tr>
+  </table>
+
+  
+  <p style="color:white;"><br />
+  © Copyright 2011 Eda Lab. All Rights Reserved. </p>
+  <p style="color:white;"><br />
+  </p>
+</div>
+
+
+
+
+
+
+</body>
+</html>
