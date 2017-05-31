@@ -13,15 +13,81 @@
 	font-size: inherit;
 }
 
-@media only screen and (max-width: 992px) {
-    .right-logo {
-        visibility: hidden;
+.slider .slides {
+    background-color: #fff;
+}
+
+.tabs.tabs-transparent {
+    background-color: transparent;
+    width: 1280px;
+}
+
+@media only screen and (max-width: 1280px) {
+    .tabs.tabs-transparent {
+        width: 100%;
     }
 }
 
 @media only screen and (max-width: 992px) {
-    .tabs {
-        visibility: hidden;
+    .tabs.tabs-transparent {
+        display: none;
+    }
+}
+
+nav .brand-logo.left img {
+    height:80px;
+    margin-top:24px;
+    padding:0 80px
+}
+
+@media only screen and (max-width: 992px) {
+    nav .brand-logo.left img {
+        height:40px;
+        margin-top:8px;
+        margin-bottom: -8px;
+        padding:0 16px
+    }
+    
+    nav .brand-logo.right {
+         display: none;
+    }
+}
+
+.side-nav {
+    width: 40%;
+}
+
+nav.nav-extended {
+    z-index: 2;
+}
+
+@media only screen and (max-width: 992px) {
+    nav.nav-extended {
+        top: 0;
+    }
+    
+    nav.nav-extended .nav-wrapper {
+        height: 64px;
+    }
+
+    .container {
+        margin-top: 64px;
+    }
+
+    .slider {
+        margin-top: 64px;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    toc-wrapper {
+        white-space: nowrap;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 70%;
     }
 }
 
@@ -86,11 +152,29 @@
     bottom: 20px;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 993px) {
   .cd-top {
     height: 60px;
     width: 60px;
     right: 30px;
     bottom: 30px;
   }
+}
+
+.slider .indicators .indicator-item.active {
+    background-color: #e53935;
+}
+
+.tabs.tabs-transparent .indicator {
+    background-color: #e53935;
+}
+
+hr {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    height: 1px;
+    background: #333;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(#CCC), to(#CCC), color-stop(50%, #333));
 }

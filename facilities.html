@@ -14,8 +14,14 @@
   <body>
     <nav class="blue-grey darken-1 nav-extended z-depth-3">
       <div class="nav-wrapper">
-        <a href="index.html" class="brand-logo"><img src="images/logos/group_logo.png"></a>
-        <a href="http://www.nus.edu.sg/" class="right brand-logo right-logo"><img style="height:2.5em; margin-top:0.7em; padding:0 3em 0 0;" src="images/logos/nus_logo.gif"></a>
+        <a href="index.html" class="brand-logo left">
+          <picture>
+            <source srcset="images/logos/group_logo_mini.png" media="(max-width: 992px)">
+              <source srcset="images/logos/group_logo.png">
+                <img src="images/logos/group_logo.png" alt="Eda Lab">
+          </picture>
+        </a>
+        <a href="http://www.nus.edu.sg/" class="brand-logo right"><img style="height:80px; margin-top:24px; padding:0 80px" src="images/logos/nus_logo.gif"></a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down" style="height: 8em;">
           <li><a href="collapsible.html"></a></li>

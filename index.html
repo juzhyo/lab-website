@@ -11,11 +11,20 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
+
 <body>
   <nav class="blue-grey darken-1 nav-extended z-depth-3">
     <div class="nav-wrapper">
-      <a href="index.html" class="brand-logo"><img src="images/logos/group_logo.png"></a>
-      <a href="http://www.nus.edu.sg/" class="right brand-logo right-logo"><img style="height:2.5em; margin-top:0.7em; padding:0 3em 0 0;" src="images/logos/nus_logo.gif"></a>
+      <!-- <a href="index.html" class="brand-logo left"><img style="height:80px; margin-top:24px; padding:0 80px"src="images/logos/group_logo.png"></a> -->
+      <a href="index.html" class="brand-logo left">
+        <picture>
+          <source srcset="images/logos/group_logo_mini.png" media="(max-width: 992px)">
+            <source srcset="images/logos/group_logo.png">
+              <img src="images/logos/group_logo.png" alt="Eda Lab">
+        </picture>
+      </a>
+      <!-- <a href="index.html" class="brand-logo left"><img style="height:80px; margin-top:24px; padding:0 80px"src="images/logos/group_logo.png"></a>  -->
+      <a href="http://www.nus.edu.sg/" class="brand-logo right"><img style="height:80px; margin-top:24px; padding:0 80px" src="images/logos/nus_logo.gif"></a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down" style="height: 8em;">
         <li><a href="collapsible.html"></a></li>
@@ -44,8 +53,8 @@
     </div>
   </nav>
   
-  <div class="slider">
-    <ul class="slides z-depth-2">
+  <div class="slider" style="z-index:1;">
+    <ul class="slides z-depth-0 center-align">
       <!-- <li> -->
       <!--   <img src="images/home/group_photo.jpg"> <\!-- random image -\-> -->
       <!--   <\!-- <div class="caption center-align"> -\-> -->
@@ -76,6 +85,9 @@
       <li>
         <img src="images/home/P1130169.jpg"> <!-- random image -->
       </li>
+      <li>
+        <img src="images/home/perovskite.png"> <!-- random image -->
+      </li>
     </ul>
   </div>
 
@@ -92,79 +104,111 @@
             <div class="col s12 m4">
             </div>
             <div class="col s12 m8">
-              <p class="light" align="justified">Warm welcome to our visitor Bian Gang from Jiangnan University!</p>
+              <p align="justified">Warm welcome to our new group member, Daniele Vella!</p>
+              <p>MAY 17, 2017</p>
+            </div>
+          </div>
+          
+          <hr>
+          
+          <div class="row">
+                <div class="col s12 m4">
+                  <img class="responsive-img" src="images/archive/Determination of Crystal Axes in Semimetallic T′‐MoTe2 by Polarized Raman Spectroscopy.png">
+                </div>
+                <div class="col s12 m8">
+                  <p align="justified">Junyong's paper titled <i>Determination of Crystal Axes in Semimetallic T′-MoTe<sub>2</sub> by Polarized Raman Spectroscopy</i> is published in <a href="http://onlinelibrary.wiley.com/doi/10.1002/adfm.201604799/full" target="blank">Advanced Functional Materials</a>!</p>
+                  <p>MARCH 2, 2017</p>
+                </div>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            <div class="col s12 m4">
+            </div>
+            <div class="col s12 m8">
+              <p align="justified">Warm welcome to our visitor Bian Gang from Jiangnan University!</p>
               <p>JANUARY 23, 2017</p>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col s12 m4">
-            </div>
-            <div class="col s12 m8">
-              <p class="light" align="justified">Happy New Year!</p>
-              <p>JANUARY 1, 2017</p>
-            </div>
-          </div>
+          <hr>
           
           <div class="row">
             <div class="col s12 m4">
-              <img class="responsive-img" src="images/archive/sicc.jpg">
             </div>
             <div class="col s12 m8">
-              <p class="light" align="justified">Congratulations to Junyong and Zhang Qi for receiving Best Poster Awards, and Shisheng for his wonderful presentation at the 9th Singapore International Chemistry Conference!</p>
+              <p align="justified">Happy New Year!</p>
+              <p>JANUARY 1, 2017</p>
+            </div>
+          </div>
+
+          <hr>
+          
+          <div class="row">
+            <div class="col s12 m3 offset-m1">
+              <img style="height:121px" src="images/archive/sicc.jpg">
+            </div>
+            <div class="col s12 m8">
+              <p align="justified">Congratulations to Junyong and Zhang Qi for receiving Best Poster Awards, and Shisheng for his wonderful presentation at SICC9!</p>
               <p>DECEMBER 14, 2016</p>
             </div>
           </div>
 
+          <hr>
+          
           <div class="row">
             <div class="col s12 m4">
             </div>
             <div class="col s12 m8">
-              <p class="light" align="justified">Congratulation to Shunfeng for completing his Ph.D oral defense!</p>
+              <p align="justified">Congratulation to Shunfeng for completing his Ph.D oral defense!</p>
               <p>NOVEMBER 7, 2016</p>
             </div>
           </div>
 
+          <hr style="">
+          
           <div class="row">
             <div class="col s12 m4">
               <img class="responsive-img" src="images/logos/npj.png">
             </div>
             <div class="col s12 m8">
-              <p class="light" align="justified">Dr. Goki Eda now serves as an Associate Editor for new Nature partner journal: <a href="http://www.nature.com/npj2dmaterials/about/editorial-board" target="blank"> npj 2D Materials and Applications</a></p>
+              <p align="justified">Dr. Goki Eda now serves as an Associate Editor for new Nature partner journal: <a href="http://www.nature.com/npj2dmaterials/about/editorial-board" target="blank"> npj 2D Materials and Applications</a></p>
               <p>OCTOBER 26, 2016</p>
             </div>
           </div>
+
+          <hr>
 
           <div class="row">
             <div class="col s12 m4">
               <img class="responsive-img" src="images/logos/applied_materials_today.jpg">
             </div>
             <div class="col s12 m8">
-              <p class="light" align="justified">Dr. Li Shisheng's paper is selected as top pick publications in <a href="http://www.journals.elsevier.com/applied-materials-today/news/prof-martin-pumera-presents-his-top-picks-from-applied-mater" target="blank">Applied Materials Today</a> by Professor Martin Pumera!</p>
+              <p align="justified">Dr. Li Shisheng's paper is selected as top pick publications in <a href="http://www.journals.elsevier.com/applied-materials-today/news/prof-martin-pumera-presents-his-top-picks-from-applied-mater" target="blank">Applied Materials Today</a> by Professor Martin Pumera!</p>
               <p>OCTOBER 26, 2016</p>
             </div>
           </div>
 
+          <hr>
+          
           <div class="row">
             <div class="col s12 m4">
             </div>
             <div class="col s12 m8">
-              <p class="light" align="justified">Warm welcome to our new Ph.D student Mr. Lee Yuan Zhe and new FYP student, Mr. Tan Choon Zhe!</p>
+              <p align="justified">Warm welcome to our new Ph.D student Mr. Lee Yuan Zhe and new FYP student, Mr. Tan Choon Zhe!</p>
               <p>AUGUST 8, 2016</p>
             </div>
           </div>
-
         </div>
 
-        <div class="right col s12 m3">
+        <div class="right col s12 m4">
           <h5 class="center">About Us</h5>
-          <p class="center light" align="justified">We are a research group at the Centre for Advanced 2D Materials, NUS. We study fundamental and applied science of novel low-dimensional materials and aim to exploit them in diverse areas of technology from electronics to energy harvesting.</p>
+          <p class="center" align="justified">We are a research group at the Centre for Advanced 2D Materials, NUS. We study fundamental and applied science of novel low-dimensional materials and aim to exploit them in diverse areas of technology from electronics to energy harvesting.</p>
           <br><br>
         </div>
 
-
-
-        <div class="right col s12 m3">
+        <div class="right col s12 m4">
           <h5 class="center">Funding</h5>
           <br>
           <a href="https://www.nrf.gov.sg/" target="_blank"><img class="responsive-img" style="padding:10px 0 10px 0;" src="images/logos/nrf.png"></a>
@@ -175,9 +219,6 @@
           <p class="light"></p>
         </div>
       </div>
-
-      
-
     </div>
   </div>
 
@@ -248,21 +289,8 @@
     });
   </script>
 
-  <script>
-      function initMap() {
-      var uluru = {lat: 1.296751, lng: 103.779304};
-      var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 19,
-      center: uluru
-      });
-      var marker = new google.maps.Marker({
-      position: uluru,
-      map: map
-      });
-      }
-    </script>
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHBc3zjFzJneKMZTzMXuHuwH24TlXco90&callback=initMap">
-    </script>
+  <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHBc3zjFzJneKMZTzMXuHuwH24TlXco90&callback=initMap">
+  </script>
   </body>
 </html>
